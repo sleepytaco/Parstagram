@@ -67,7 +67,7 @@ public class SignupActivity extends AppCompatActivity {
             public void done(ParseException e) {
                 if (e == null) {
                     Toast.makeText(SignupActivity.this, "Account created!", Toast.LENGTH_SHORT).show();
-                    logUserIn();
+                    //logUserIn();
                 } else {
                     // Sign up didn't succeed. Look at the ParseException
                     // to figure out what went wrong

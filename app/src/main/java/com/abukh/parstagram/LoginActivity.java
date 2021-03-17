@@ -74,14 +74,14 @@ public class LoginActivity extends AppCompatActivity {
 
                 // navigate to the main activity if the user has logged in properly
                 goMainActivity();
-                Toast.makeText(LoginActivity.this, "Welcome back, " + username, Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Welcome, " + username, Toast.LENGTH_SHORT).show();
             }
         });
 
     }
 
     private void goMainActivity() {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(i);
         finish(); // finishes the login activity once we navigate to main activity. this prevent the user from coming back to the login activity again
     }

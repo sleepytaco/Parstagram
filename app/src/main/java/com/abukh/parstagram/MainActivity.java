@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         btnSubmit = findViewById(R.id.btnSubmit);
         btnLogOut = findViewById(R.id.btnLogOut);
 
-        queryPosts();
+        //queryPosts();
 
         btnCaptureImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Error while saving post!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Log.i(TAG, "Post was saved successfully!");
+                Toast.makeText(MainActivity.this, "Post was saved successfully!", Toast.LENGTH_SHORT).show();
                 etDescription.setText("");
                 ivPostImage.setImageResource(0);
             }
